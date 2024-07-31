@@ -3,32 +3,25 @@ import java.util.List;
 
 public class Student {
     private final String name;
-    private List<Integer> grades;
+    private List<Integer> grades; //лист использован просто для удобства добавления элементов
 
-
-    private Student(String name, List<Integer> grades) {
+    public Student(String name, int[] grades) {
         this.name = name;
-        //if (!grades.isEmpty()) {this.grades = grades;}
         this.grades = checkGrades(grades);
     }
 
-    public static Student ofName(String name) {
-        return new Student(name, new ArrayList<>());
+    public Student(String name) {
+        this.name = name;
+        this.grades = new ArrayList<>();
     }
 
-    public static Student ofNameAndGrades(String name, int[] grades) {
+    private static List<Integer> checkGrades(int[] grades) {
         List<Integer> lst = new ArrayList<>();
         for (int i = 0; i < grades.length; i++) {
-            lst.add(grades[i]);
+            if (grades[i] > 1 && grades[i] < 6) lst.add(grades[i]);
+            else throw new IllegalArgumentException("Grade must be in range 2-5!");
         }
-        return new Student(name, lst);
-    }
-
-    private static List<Integer> checkGrades(List<Integer> grades) {
-        //вот это нагуглил, удобная штука
-        //https://stackoverflow.com/questions/14231688/how-to-remove-element-from-arraylist-by-checking-its-value
-        grades.removeIf(integer -> integer > 5 || integer < 2);
-        return grades;
+        return lst;
     }
 
     @Override
