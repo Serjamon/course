@@ -10,7 +10,7 @@ public class MyProg {
         Point arr[] = {p1, p2, p3, p4};
         PolyLine normLine = new PolyLine(arr);
         double normLineLenght = normLine.getLength();//15.70
-        System.out.println("Длина ломанной линии: " + normLineLenght);
+        System.out.println(normLineLenght);
 
         Line l2 = new Line(8, 9, 1, 5);
         System.out.println(l2.getLength());//8.06
@@ -18,6 +18,16 @@ public class MyProg {
         PolyLine closedPoly = new ClosedPolyLine(arr);
         System.out.println(closedPoly.getLength());//23.76
 
+        System.out.println("Measurable");
+        SoutMeasurable(normLine);
+        SoutMeasurable(l2);
+        SoutMeasurable(closedPoly);
 
     }
+
+    public static void SoutMeasurable(Measurable link) {
+        System.out.println(link.getLength());
+    }
+
+
 }

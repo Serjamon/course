@@ -1,4 +1,4 @@
-public class Line {
+public class Line implements Measurable{
 
     Point startCoord;
     Point endCoord;
