@@ -6,6 +6,16 @@ class Fraction extends Number {
         this.denum = denum;
     }
 
+    public Fraction(int num) {
+        this.num = num;
+        this.denum = 1;
+    }
+
+    public Fraction(int whole, int num, int denum) {
+        this.num = (whole * denum) + num;
+        this.denum = denum;
+    }
+
     public String toString() {
         return num + "/" + denum;
     }
@@ -23,11 +33,11 @@ class Fraction extends Number {
 
     @Override
     public float floatValue() {
-        return num / denum;
+        return (float) num / denum;
     }
 
     @Override
     public double doubleValue() {
-        return num / denum;
+        return (double) num / denum;
     }
 }
