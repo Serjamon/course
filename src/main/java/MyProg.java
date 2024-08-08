@@ -8,5 +8,9 @@ public class MyProg {
 
         System.out.println(fr1);
 
+        Number num = new Fraction(2,2);
+        System.out.println(num.intValue());
+        System.out.println(num.doubleValue());
+
     }
 }
