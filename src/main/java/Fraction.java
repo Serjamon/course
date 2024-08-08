@@ -1,39 +1,33 @@
-public class Fraction {
-    private int numerator, denominator;
+class Fraction extends Number {
+    int num, denum;
 
-    public Fraction(int numerator, int denominator) {
-        this.numerator = numerator;
-        setDenominator(denominator);
+    public Fraction(int num, int denum) {
+        this.num = num;
+        this.denum = denum;
     }
 
-    private void setDenominator(int num){
-        if(num < 0) throw new IllegalArgumentException("must be > 0");
-        this.denominator = num;
+    public String toString() {
+        return num + "/" + denum;
+    }
+
+
+    @Override
+    public int intValue() {
+        return num + denum;
     }
 
     @Override
-    public String toString() {
-        return numerator + "/" + denominator;
+    public long longValue() {
+        return num + denum;
     }
 
-    public Fraction sum(Fraction fr){
-        return new Fraction((numerator * fr.denominator) +
-                (fr.numerator * denominator),
-                (denominator * fr.denominator));
+    @Override
+    public float floatValue() {
+        return num + denum;
     }
 
-    public Fraction sum(int x){
-        return new Fraction((x * denominator + numerator), (denominator));
+    @Override
+    public double doubleValue() {
+        return num + denum;
     }
-
-    public Fraction minus(Fraction fr){
-        return new Fraction((numerator * fr.denominator) -
-                (fr.numerator * denominator),
-                (denominator * fr.denominator));
-    }
-
-    public Fraction minus(int x){
-        return new Fraction((numerator - x * denominator), (denominator));
-    }
-
 }

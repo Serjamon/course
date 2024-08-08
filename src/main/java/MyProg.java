@@ -6,8 +6,7 @@ public class MyProg {
         Fraction fr2 = new Fraction(2, 5);
         Fraction fr3 = new Fraction(7, 8);
 
-        Fraction res = fr1.sum(fr2).sum(fr3).minus(5);
-        System.out.println(res);
+        System.out.println(fr1);
 
     }
 }
