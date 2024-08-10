@@ -1,7 +1,7 @@
-import ru.сourses.geometry.ClosedPolyLine;
-import ru.сourses.geometry.Line;
-import ru.сourses.geometry.Point;
-import ru.сourses.geometry.PolyLine;
+import ru.courses.geometry.ClosedPolyLine;
+import ru.courses.geometry.Line;
+import ru.courses.geometry.Point;
+import ru.courses.geometry.PolyLine;
 
 public class MyProg {
     public static void main(String[] args) {
