@@ -1,3 +1,5 @@
+package ru.courses.education;
+
 import java.util.ArrayList;
 import java.util.List;
 
