@@ -1,23 +1,17 @@
-import java.util.List;
 
 public class MyProg {
     public static void main(String[] args) {
 
-        Point p1 = new Point(1, 5);
-        Point p2 = new Point(2, 8);
-        Point p3 = new Point(5, 3);
-        Point p4 = new Point(8, 9);
-        Point arr[] = {p1, p2, p3, p4};
-        PolyLine normLine = new PolyLine(arr);
-        double normLineLenght = normLine.getLength();//15.70
-        System.out.println("Длина ломанной линии: " + normLineLenght);
+        Bird sp1 = new Sparrow("Уарабэй");
+        sp1.sing();
 
-        Line l2 = new Line(8, 9, 1, 5);
-        System.out.println(l2.getLength());//8.06
+        Bird cc1 = new Cuckoo("Кукушка");
+        cc1.sing();
 
-        PolyLine closedPoly = new ClosedPolyLine(arr);
-        System.out.println(closedPoly.getLength());//23.76
+        Bird pr1 = new Parrot("Попка", "Уарабэй и кукшка дураки");
+        pr1.sing();
 
 
     }
 }
+
