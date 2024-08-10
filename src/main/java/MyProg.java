@@ -1,4 +1,7 @@
-import java.util.List;
+import ru.сourses.geometry.ClosedPolyLine;
+import ru.сourses.geometry.Line;
+import ru.сourses.geometry.Point;
+import ru.сourses.geometry.PolyLine;
 
 public class MyProg {
     public static void main(String[] args) {

@@ -1,3 +1,5 @@
+package ru.сourses.geometry;
+
 public class ClosedPolyLine extends PolyLine{
 
     public ClosedPolyLine(Point[] arr) {
