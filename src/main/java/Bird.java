@@ -1,4 +1,4 @@
-public abstract class Bird {
+public abstract class Bird implements Singable{
 
     String name;
 
@@ -6,6 +6,6 @@ public abstract class Bird {
         this.name = name;
     }
 
-    abstract void sing();
+    public abstract void sing();
 
 }

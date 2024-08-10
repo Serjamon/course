@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class Parrot extends Bird{
+public class Parrot extends Bird {
 
     String text;
 
@@ -10,11 +10,11 @@ public class Parrot extends Bird{
     }
 
     @Override
-    void sing() {
+    public void sing() {
         int rnd = new Random().nextInt(text.length());
         for (int i = 0; i <= rnd; i++) {
             System.out.print(text.charAt(i));
         }
-
+        System.out.println();
     }
 }

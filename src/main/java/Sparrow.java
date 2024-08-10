@@ -5,7 +5,7 @@ public class Sparrow extends Bird {
     }
 
     @Override
-    void sing() {
+    public void sing() {
         System.out.println("чырык");
     }
 }
