@@ -12,8 +12,6 @@ public class Employee {
 
     public void setDept(Department dept) {
         this.dept = dept;
-        //не нашел как провести проверку на это:
-        //System.out.println("Нельзя перевести начальника в другой отдел!");
     }
 
     public boolean worksInDept(Department inDep){
