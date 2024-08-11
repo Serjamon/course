@@ -21,7 +21,7 @@
             <configuration>
                 <archive>
                     <manifest>
-                        <mainClass>MyProg</mainClass>
+                        <mainClass>ru.courses.main.MyProg</mainClass>
                     </manifest>
                 </archive>
             </configuration>
