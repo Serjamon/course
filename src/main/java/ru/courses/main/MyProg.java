@@ -1,13 +1,23 @@
 package ru.courses.main;
 
+
+import ru.courses.geometry.Point;
 import static java.lang.Integer.parseInt;
 import static java.lang.Math.pow;
 
 
 public class MyProg {
+
     public static void main(String[] args) {
 
-        System.out.println(myPow(args));
+        Point innerPoint = new Point(2,3);
+        System.out.println(innerPoint);
+
+        java.awt.Point pointAWT = new java.awt.Point(3, 5);
+        System.out.println(pointAWT);
+
+
+
 
     }
 
