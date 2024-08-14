@@ -2,7 +2,7 @@ package ru.courses.objects;
 
 import java.util.Objects;
 
-class Point {
+class Point implements Cloneable {
     int x, y;
 
     public Point(int x, int y) {
