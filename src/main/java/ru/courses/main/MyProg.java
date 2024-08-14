@@ -1,22 +1,19 @@
 package ru.courses.main;
 
-
-import ru.courses.organization.Department;
-import ru.courses.organization.Employee;
+import ru.courses.objects.Fraction;
 
 public class MyProg {
 
     public static void main(String[] args) {
 
-        Department dept1 = new Department("Cleaning");
-        Department dept2 = new Department("Cooking");
-        Employee empl1 = new Employee("Petya", dept1);
-        Employee empl2 = new Employee("Vasya", dept2);
-
-        System.out.println(empl1);
-        dept1.setBoss(empl1);
-        System.out.println(empl1);
-        dept2.setBoss(empl1);
+        Fraction fr2;
+        Fraction fr1 = new Fraction(3, 5);
+        try {
+            fr2 = fr1.clone();
+        } catch (CloneNotSupportedException e) {
+            throw new RuntimeException(e);
+        }
+        System.out.println(fr1==fr2);
 
     }
 
