@@ -2,7 +2,7 @@ package ru.courses.objects;
 
 import java.util.Objects;
 
-class Line{
+class Line implements Cloneable{
     Point start,end;
     public Line(Point start, Point end) {
         this.start = start;
