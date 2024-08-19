@@ -1,28 +1,19 @@
 package ru.courses.main;
 
-import ru.courses.objects.*;
+import ru.courses.enums.ESharpness;
+import ru.courses.enums.Sauce;
 
 public class MyProg {
 
     public static void main(String[] args) {
 
-        Point p1 = new Point(1, 2);
-        Point p2 = new Point(2, 3);
-        Point p3 = new Point(3, 4);
-        Point p4 = new Point(4, 5);
+        Sauce s1 = new Sauce("Чили", ESharpness.VERYHOT);
+        Sauce s2 = new Sauce("Кепчук", ESharpness.HOT);
+        Sauce s3 = new Sauce("Мазик", ESharpness.NOTHOT);
 
-        Point[] pArray1 = {p1,p2,p3,p4};
-        Point[] pArray2 = {p1,p2,p3};
-        Point[] pArray3 = {p1,p2,p4};
-
-        PolyLine pl1 = new PolyLine(pArray1);
-        PolyLine plEq = new PolyLine(pArray1);
-        PolyLine plNotEq = new PolyLine(pArray2);
-
-        System.out.println(pl1.equals(plEq));
-        System.out.println(pl1.equals(plNotEq));
-        System.out.println(plNotEq.equals(plEq));
-
+        System.out.println(s1);
+        System.out.println(s2);
+        System.out.println(s3);
 
     }
 
