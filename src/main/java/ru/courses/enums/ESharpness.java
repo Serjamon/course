@@ -5,7 +5,7 @@ public enum ESharpness {
     HOT("острый"),
     NOTHOT("не острый");
 
-    private String str;
+    private final String str;
 
     ESharpness(String str) {
         this.str = str;
