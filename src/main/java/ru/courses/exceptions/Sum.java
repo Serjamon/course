@@ -6,10 +6,10 @@ public class Sum {
 
         double res = 0.0, num;
 
-        for (int i = 0; i < args.length; i++) {
+        for (String arg : args) {
 
             try {
-                num = Double.parseDouble(args[i]);
+                num = Double.parseDouble(arg);
             } catch (NumberFormatException e) {
                 num = 0.0;
             }
