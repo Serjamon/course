@@ -1,5 +1,8 @@
 package ru.courses.exceptions;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 public class Sum {
 
     public static void main(String[] args) {
@@ -19,11 +22,10 @@ public class Sum {
 
     public static boolean checkString(String str) {
 
-        for (int i = 0; i < str.length(); i++) {
-            if (!(str.charAt(i) >= 48 && str.charAt(i) <= 57))
-                return false;
-        }
-        return true;
+        Pattern pattern = Pattern.compile("\\d+\\.\\d+");
+        Matcher matcher = pattern.matcher(str);
+
+        return matcher.find();
     }
 
 }
